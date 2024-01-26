@@ -1,10 +1,10 @@
+import Body from "./Components.js/Body";
+import Header from "./Components.js/Header";
 
 function App() {
   return (
     <div>
-      <h1> hiii
-      </h1>
-
+      <Body/>
     </div>
   );
 }
