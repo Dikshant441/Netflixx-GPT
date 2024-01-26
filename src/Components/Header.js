@@ -28,7 +28,7 @@ const Header = () => {
         <img
           className="w-12 h-12"
           alt="usericon"
-          src="	https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
+          src={user.photoURL}
         />
         <button onClick={handleSignOut} className="font-bold text-white">
           sign-out

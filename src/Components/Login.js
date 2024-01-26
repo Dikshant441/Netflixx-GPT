@@ -7,10 +7,14 @@ import {
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
 import { useNavigate } from "react-router-dom";
+import { updateProfile } from "firebase/auth";
+import { useDispatch } from "react-redux";
+import { addUser } from "../utils/userSlice";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
+  const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const name = useRef(null);
@@ -26,7 +30,6 @@ const Login = () => {
     // const message =  checkValidData( name.current.value, email.current.value, password.current.value);
     // console.log(message);
     // setErrorMessage(message);
-
 
     if (!isSignInForm) {
       const message = checkValidData(
@@ -44,7 +47,6 @@ const Login = () => {
       setErrorMessage(message);
     }
 
-
     if (!isSignInForm) {
       // Sign Up logic
       createUserWithEmailAndPassword(
@@ -53,12 +55,29 @@ const Login = () => {
         password.current.value
       )
         .then((userCredential) => {
-          // Signed up
           const user = userCredential.user;
-          console.log(user);
-          navigate("/browse");
+          updateProfile(user, {
+            displayName: "diksjanh",
+            photoURL:
+              "https://avatars.githubusercontent.com/u/85191171?s=96&v=4",
+          })
+            .then(() => {
+              const { uid, email, displayName, photoURL } = auth.currentUser;
+              dispatch(
+                addUser({
+                  uid: uid,
+                  email: email,
+                  displayName: displayName,
+                  photoURL: photoURL,
+                })
+              );
+              navigate("/browse");
+            })
+            .catch((error) => {
+              setErrorMessage(error.message);
+            });
 
-          // ...
+          //  console.log(user);
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -86,8 +105,6 @@ const Login = () => {
           setErrorMessage(errorCode + "-" + errorMessage);
         });
     }
-
-
   };
 
   const toggleSignInForm = () => {

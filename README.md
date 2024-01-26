@@ -13,6 +13,11 @@
 - Create signUp User Account
 - Impliment Sign In user Api
 - Create Redux Store with userSlice
+- Updated User 
+    - Display name
+    - PhotoURL
+    - Email 
+    - Password
 
 
 
