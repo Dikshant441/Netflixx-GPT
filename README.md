@@ -22,7 +22,7 @@
 - BugFix : if the user is not logged in Redirect/ browse to Login Page and vise-versa
 - Unsubscribed to the onAuthStateChanged callback
 - Add hardcoded value to the constant file 
-
+- Register TMBD API & create an app & get access token
 
 # Features
 - Login/ sing up
