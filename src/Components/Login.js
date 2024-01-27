@@ -10,6 +10,7 @@ import { auth } from "../utils/firebase";
 import { updateProfile } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { BG_IMAGE, USER_AVATAR } from "../utils/constant";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -57,8 +58,8 @@ const Login = () => {
           const user = userCredential.user;
           updateProfile(user, {
             displayName: "diksjanh",
-            photoURL:
-              "https://avatars.githubusercontent.com/u/85191171?s=96&v=4",
+            photoURL: USER_AVATAR
+              ,
           })
             .then(() => {
               const { uid, email, displayName, photoURL } = auth.currentUser;
@@ -114,7 +115,7 @@ const Login = () => {
 
       <div className="absolute">
         <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/a73c4363-1dcd-4719-b3b1-3725418fd91d/fe1147dd-78be-44aa-a0e5-2d2994305a13/IN-en-20231016-popsignuptwoweeks-perspective_alpha_website_large.jpg"
+          src={BG_IMAGE}
           alt="bg-logo"
         />
       </div>
