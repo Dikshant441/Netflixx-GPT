@@ -13,11 +13,13 @@
 - Create signUp User Account
 - Impliment Sign In user Api
 - Create Redux Store with userSlice
-- Updated User 
+- Updated User Profile
     - Display name
     - PhotoURL
     - Email 
     - Password
+- BugFix : Sign up user display and profile picture update
+- BugFix : if the user is not logged in Redirect/ browse to Login Page and vise-versa
 
 
 
