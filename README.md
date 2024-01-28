@@ -23,6 +23,7 @@
 - Unsubscribed to the onAuthStateChanged callback
 - Add hardcoded value to the constant file 
 - Register TMBD API & create an app & get access token
+- Video Title and video Background 
 
 # Features
 - Login/ sing up
@@ -30,10 +31,11 @@
     - redirect to browser app
 - Browser( after authentication)
     - header
-    - Main movie
-        - trailer in background
-        - Moviesuggestion
+    - MainContainer
+        - Video Background
+        - VideoTittle
             - MovieList * N 
+             - cards * N
 
 - NetflixGPT
     - SearchBar
