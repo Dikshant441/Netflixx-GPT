@@ -23,7 +23,8 @@
 - Unsubscribed to the onAuthStateChanged callback
 - Add hardcoded value to the constant file 
 - Register TMBD API & create an app & get access token
-- Video Title and video Background 
+- Video Title and fetch trailer video && updating the store with trailer video data
+- custom Hook useMovieTrailer for fetch background code
 
 # Features
 - Login/ sing up
