@@ -23,8 +23,23 @@
 - Unsubscribed to the onAuthStateChanged callback
 - Add hardcoded value to the constant file 
 - Register TMBD API & create an app & get access token
-- Video Title and fetch trailer video && updating the store with trailer video data
-- custom Hook useMovieTrailer for fetch background code
+- Get Data from TMDB now playing movies list API
+- Custom Hook for Now Playing Movies
+- Create movieSlice
+- Update Store with movies Data
+- Planning for MainContauiner & secondary container
+- Fetch Data for Trailer Video
+- Update Store with Trailer Video Data
+- Embedded the Yotube video and make it autoplay and mute
+- Tailwind Classes to make Main Container look awesome
+- Build Secondary Container
+- Bulid Movie list
+- Build Movie Card
+- TMDB Image CDN URL
+- Made the Browser Page amazing with Tailwind CSS
+- Use Custom Hooks for diff title movies
+
+
 
 # Features
 - Login/ sing up

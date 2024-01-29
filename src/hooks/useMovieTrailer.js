@@ -4,18 +4,18 @@ import { useEffect } from "react";
 import { addTrailerVideo } from "../utils/moviesSlice";
 
 
-const useMovieTrailer = () => {
+const useMovieTrailer = (movieId) => {
+  //fetch trailer video && updating the store with trailer video data
 
     const dispatch = useDispatch();
-    //  fetch Trailer Video
   
     const getMoviesVideo = async () => {
       const data = await fetch(
-        "https://api.themoviedb.org/3/movie/572802/videos?language=en-US",
+        "https://api.themoviedb.org/3/movie/" +  movieId +"/videos?language=en-US",
         API_OPTION
       );
       const json = await data.json();
-      console.log(json);
+      // console.log(json);  4
   
       // filter Trailers from multiple videos
       const filterData = json.results?.filter(
