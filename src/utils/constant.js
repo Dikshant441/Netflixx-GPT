@@ -24,5 +24,5 @@ export const SUPPORT_LANGUAGE = [
   { identifier: "sp", name: "Spanish" },
 ];
 
-export const OPEN_AI_KEY = "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";
+export const OPEN_AI_KEY = "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";
 
