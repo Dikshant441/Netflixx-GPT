@@ -41,7 +41,16 @@
 - GPT Search Page
 - GPT Search Bar
 - Multi-language Feature in only GPT Search Bar
-
+- Get Open AI Api key
+- Get Search API Call
+- Fetch gptmoviesSuggestion from TMDN
+- created gptSlice added date
+- Reused Movie list componant to make suggestion container
+- Memoozation
+- Added .env file
+- Adding .env file to gitignore
+- Made our Site Responsive
+- and according to knowledge will updating time to time 
 
 
 # Features
