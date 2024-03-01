@@ -1,0 +1,60 @@
+[debug] [2024-02-17T09:21:16.018Z] ----------------------------------------------------------------------
+[debug] [2024-02-17T09:21:16.020Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\singh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-02-17T09:21:16.020Z] CLI Version:   13.1.0
+[debug] [2024-02-17T09:21:16.020Z] Platform:      win32
+[debug] [2024-02-17T09:21:16.021Z] Node Version:  v20.11.0
+[debug] [2024-02-17T09:21:16.021Z] Time:          Sat Feb 17 2024 14:51:16 GMT+0530 (India Standard Time)
+[debug] [2024-02-17T09:21:16.021Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-17T09:21:16.091Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-17T09:21:16.091Z] > authorizing via signed-in user (singhdikshant200@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\singh\OneDrive\Desktop\net-gpt
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-02-17T09:21:26.616Z] Using project from CLI flag: netgpt-20845
+[debug] [2024-02-17T09:21:26.618Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netgpt-20845 [none]
+[debug] [2024-02-17T09:21:27.309Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netgpt-20845 200
+[debug] [2024-02-17T09:21:27.309Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netgpt-20845 {"projectId":"netgpt-20845","projectNumber":"1060998926767","displayName":"NetGpt","name":"projects/netgpt-20845","resources":{"hostingSite":"netgpt-20845"},"state":"ACTIVE","etag":"1_c9bc2a17-96e4-4b14-b771-02e59141957a"}
+[info] i  Using project netgpt-20845 (NetGpt) 
+[info] 
+=== Hosting Setup
+[debug] [2024-02-17T09:21:27.314Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netgpt-20845 [none]
+[debug] [2024-02-17T09:21:27.680Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netgpt-20845 200
+[debug] [2024-02-17T09:21:27.680Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netgpt-20845 {"projectId":"netgpt-20845","projectNumber":"1060998926767","displayName":"NetGpt","name":"projects/netgpt-20845","resources":{"hostingSite":"netgpt-20845"},"state":"ACTIVE","etag":"1_c9bc2a17-96e4-4b14-b771-02e59141957a"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote build/404.html 
+[debug] [2024-02-17T09:21:58.789Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-02-17T09:21:59.051Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-02-17T09:21:59.051Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.8.0","browserURL":"https://www.gstatic.com/firebasejs/10.8.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.8.0/firebase.tgz"},"live":{"version":"10.8","browserURL":"https://www.gstatic.com/firebasejs/live/10.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.8/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.8.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.8.0/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.8.0/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.8.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.8.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.8.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.8.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.8.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.8.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.8.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.memory.js"}}
+[info] i  Skipping write of build/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\singh\OneDrive\Desktop\net-gpt 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=826266089&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
